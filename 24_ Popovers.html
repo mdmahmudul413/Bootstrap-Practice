@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popovers</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div style="margin-top: 50px;"></div>
+    <div class="container">
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Popover</p>
+        <!-- Popover -->
+
+
+        <br><br>
+        <button class="btn btn-primary m-2" data-toggle="popover" title="Hello World!" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, laudantium." data-placement="top">Toggle Popover</button>
+
+
+
+        <button class="btn btn-danger m-2" data-toggle="popover" title="Hello World!" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, laudantium." data-placement="right">Toggle Popover</button>
+
+
+
+        <button class="btn btn-info m-2" data-toggle="popover" title="Hello World!" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, laudantium." data-placement="left">Toggle Popover</button>
+
+
+
+        <button class="btn btn-success m-2" data-toggle="popover" title="Hello World!" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, laudantium." data-placement="bottom">Toggle Popover</button>
+
+
+        <div style="margin-top: 50px;"></div>
+        <div class="container">
+
+            <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Dismissible Popover</p>
+            <!-- Dismissible Popover -->
+            <br>
+            <button data-trigger="focus" class="btn btn-success m-2" data-toggle="popover" title="Hello World!" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, laudantium." data-placement="top">Toggle Popover</button>
+
+
+            <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Control with JS</p>
+            <!-- Control with JS -->
+            <div class="d-flex justify-content-center">
+                <br>
+                <button id="hello" data-trigger="focus" class="btn btn-success m-2" data-toggle="popover" title="Hello World!" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, laudantium." data-placement="top">Toggle Popover</button>
+            </div>
+
+
+            <br>
+            <button class="btn btn-info" onclick="showPopover()">Show Popover</button>
+
+            <button class="btn btn-info" onclick="hidePopover()">Hide Popover</button>
+
+            <button class="btn btn-info" onclick="togglePopover()">Toggle Popover</button>
+
+
+
+        </div>
+        <div style="margin-top: 50px;"></div>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+            $('[data-toggle="popover"]').popover();
+
+            function showPopover() {
+                $('#hello').popover('show');
+            }
+
+
+            function hidePopover() {
+                $('#hello').popover('hide');
+            }
+
+
+            function togglePopover() {
+                $('#hello').popover('toggle');
+            }
+        </script>
+</body>
+
+</html>

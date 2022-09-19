@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Input</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div style="margin-top: 50px;"></div>
+    <div class="container">
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Forms</p>
+        <!-- Forms -->
+
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" id="name" placeholder="Enter name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="email" id="email" placeholder="Enter email">
+                <small class="form-text text-muted">Your email will not be shared with anyone</small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" id="password" placeholder="Password" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" name="" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="" id="message" placeholder="Write about yourself"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="file">File input</label>
+                <!-- class="form-control-file" can be use in the input tag -->
+                <input class="form-control" type="file" id="file">
+                <small class="form-text text-muted">Max 3mb size</small>
+            </div>
+
+
+
+        </form>
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Forms Sizing- Small & Large size</p>
+        <!-- Forms Sizing- Small & Large size -->
+
+        <form action="">
+            <div class="form-group">
+                <label for="name1">Name</label>
+                <input class="form-control form-control-sm" type="text" id="name1" placeholder="Enter name">
+            </div>
+
+            <div class="form-group">
+                <label for="email1">Email</label>
+                <input class="form-control form-control-lg" type="email" id="email1" placeholder="Enter email">
+                <small class="form-text text-muted">Your email will not be shared with anyone</small>
+            </div>
+        </form>
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">fieldset and legend</p>
+        <!-- fieldset and legend -->
+
+        <form action="">
+            <fieldset class="form-group">
+                <legend>What are you using this service for?</legend>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="option1" id="personal" checked>
+                    <label class="form-check-label" for="personal">Personal</label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="option2" id="commercial">
+                    <label class="form-check-label" for="commercial">Commercial Use</label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="option3" id="testing" disabled>
+                    <label class="form-check-label" for="testing">Testing</label>
+                </div>
+
+            </fieldset>
+        </form>
+
+
+        <fieldset class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="signUp">
+                <label class="form-check-label" for="signUp">Sign up for newsletter</label>
+            </div>
+            <button class="btn btn-primary mt-3">Submit</button>
+        </fieldset>
+
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Inline Form</p>
+        <!-- Inline Form -->
+        <form class="form-inline" action="">
+
+            <input class="form-control mr-2" type="text" id="username" placeholder="Enter name">
+
+            <input class="form-control mr-2" type="text" id="password" placeholder="Password">
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="reminder">
+                <label class="form-check-label mr-2" for="reminder">Remember me</label>
+            </div>
+
+            <button class="btn btn-warning">Submit</button>
+
+        </form>
+
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center; margin-top: 15px;">VALIDATION</p>
+        <!-- VALIDATION -->
+
+        <div class="form-group">
+            <label for="username1">Username</label>
+            <input class="form-control is-valid" type="text" id="username1" placeholder="Enter name">
+            <div class="valid-feedback">Username available</div>
+            <small class="text-muted">Must be at least 8 characters</small>
+        </div>
+
+
+        <div class="form-group">
+            <label for="password1">Password</label>
+            <input class="form-control is-invalid" type="text" id="password1" placeholder="Password">
+            <div class="invalid-feedback">That password is not safe</div>
+            <small class="text-muted">Please use a strong password</small>
+        </div>
+
+
+        <div style="margin-top: 50px;"></div>
+
+        <script src="js/jquery-slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

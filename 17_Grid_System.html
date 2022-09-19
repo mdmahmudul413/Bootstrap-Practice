@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div style="margin-top: 50px;"></div>
+    <div class="container">
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Auto Layout Column</p>
+        <!-- Auto Layout Column -->
+
+        <div class="row">
+            <div class="col">
+                <h3>Moshiur</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem recusandae quis beatae. Reprehenderit, cum voluptas mollitia voluptate atque eaque dignissimos.</p>
+            </div>
+            <div class="col">
+                <h3>Moshiur</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem recusandae quis beatae. Reprehenderit, cum voluptas mollitia voluptate atque eaque dignissimos.</p>
+            </div>
+            <div class="col">
+                <h3>Moshiur</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem recusandae quis beatae. Reprehenderit, cum voluptas mollitia voluptate atque eaque dignissimos.</p>
+            </div>
+        </div>
+
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Manually Layout Column</p>
+        <!-- Manually Layout Column -->
+        <!-- col-12=100% width, col-6=50%, col-3=25%[col-(1-12)] -->
+
+        <div class="row">
+            <div class="col-6">
+                <h3>Moshiur</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem recusandae quis beatae. Reprehenderit, cum voluptas mollitia voluptate atque eaque dignissimos.</p>
+            </div>
+
+            <div class="col-3">
+                <h3>Moshiur</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem recusandae quis beatae. Reprehenderit, cum voluptas mollitia voluptate atque eaque dignissimos.</p>
+            </div>
+
+            <div class="col-3">
+                <h3>Moshiur</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem recusandae quis beatae. Reprehenderit, cum voluptas mollitia voluptate atque eaque dignissimos.</p>
+            </div>
+
+        </div>
+
+
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Responsive Classes</p>
+        <!-- Responsive Classes -->
+
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-8">
+                <h3>Moshiur</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem recusandae quis beatae. Reprehenderit, cum voluptas mollitia voluptate atque eaque dignissimos.</p>
+            </div>
+
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4 col-xl-2">
+                <h3>Moshiur</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem recusandae quis beatae. Reprehenderit, cum voluptas mollitia voluptate atque eaque dignissimos.</p>
+            </div>
+
+            <div class="col-12 col-sm-3 col-md-6 col-lg-4 col-xl-2">
+                <h3>Moshiur</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem recusandae quis beatae. Reprehenderit, cum voluptas mollitia voluptate atque eaque dignissimos.</p>
+            </div>
+
+        </div>
+
+
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Nesting Grid</p>
+        <!-- Nesting Grid -->
+
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Card-title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, id. Debitis, incidunt.</p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4>Card-title</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, id. Debitis, incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4>Card-title</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, id. Debitis, incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <p style="font-weight: bold;
+        color: red; font-size: 25px; text-align:center;">Offseting Column</p>
+        <!-- Offseting Column -->
+
+        <div class="row">
+            <div class="col-3 offset-sm-3 offset-md-0 offset-lg-6 offset-xl-0">
+                <h4>Card-title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, id. Debitis, incidunt.</p>
+            </div>
+            <div class="col-3 offset-6 offset-sm-0 offset-xl-6">
+                <h4>Card-title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, id. Debitis, incidunt.</p>
+            </div>
+        </div>
+
+
+        <p style="font-weight: bold;
+        color: red; font-size: 25px; text-align:center;">Reordering(Two Columns)</p>
+        <!-- Reordering(Two Columns) -->
+
+        <div class="row">
+            <div class="col order-last">
+                <h4>First Column</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, id. Debitis, incidunt.</p>
+            </div>
+            <div class="col order-first">
+                <h4>Second Column</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, id. Debitis, incidunt.</p>
+            </div>
+        </div>
+
+
+        <p style="font-weight: bold;
+        color: red; font-size: 25px; text-align:center;">Reordering(Multiple Columns)</p>
+        <!-- Reordering(Multiple Columns) -->
+
+        <div class="row">
+            <div class="col order-3">
+                <h4>First Column</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, id. Debitis, incidunt.</p>
+            </div>
+            <div class="col order-1">
+                <h4>Second Column</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, id. Debitis, incidunt.</p>
+            </div>
+            <div class="col order-2">
+                <h4>Third Column</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, id. Debitis, incidunt.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div style="margin-top: 50px;"></div>
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

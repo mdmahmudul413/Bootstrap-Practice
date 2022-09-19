@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltips</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div style="margin-top: 50px;"></div>
+    <div class="container">
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Tooltips</p>
+        <!-- Tooltips -->
+
+        <button class="btn btn-primary m-2" title="Hello World!" data-placement="top" data-toggle="tooltip">Tooltip on Top</button>
+
+
+        <button class="btn btn-primary m-2" title="Hello World!" data-placement="left" data-toggle="tooltip">Tooltip on Left</button>
+
+
+        <button class="btn btn-primary m-2" title="Hello World!" data-placement="right" data-toggle="tooltip">Tooltip on Right</button>
+
+
+        <button class="btn btn-primary m-2" title="Hello World!" data-placement="bottom" data-toggle="tooltip">Tooltip on Botton</button>
+
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Tooltips with HTML</p>
+        <!-- Tooltips with HTML -->
+
+        <button class="btn btn-success m-2" title="<h2>Hello World!</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptate!</p>" data-html="true" data-placement="top" data-toggle="tooltip">Tooltip on Top</button>
+
+
+        <p style="font-weight: bold;
+    color: red; font-size: 25px; text-align:center;">Trigger with JS</p>
+        <!-- Trigger with JS -->
+
+        <div class="d-flex justify-content-center mb-4">
+
+            <button id="hello" class="btn btn-info m-2" title="<h2>Hello World!</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptate!</p>" data-html="true" data-placement="top" data-toggle="tooltip">Tooltip on Top</button>
+
+        </div>
+
+        <button class="btn btn-secondary" onclick="showToolTip()">Show Tooltip</button>
+
+        <button class="btn btn-warning" onclick="hideToolTip()">Hide Tooltip</button>
+
+        <button class="btn btn-danger" onclick="toggleToolTip()">Toggle Tooltip</button>
+
+
+
+    </div>
+    <div style="margin-top: 50px;"></div>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $('[data-toggle="tooltip"]').tooltip();
+
+        function showToolTip() {
+            $('#hello').tooltip('show');
+        }
+
+        function hideToolTip() {
+            $('#hello').tooltip('hide');
+        }
+
+        function toggleToolTip() {
+            $('#hello').tooltip('toggle');
+        }
+    </script>
+</body>
+
+</html>
